@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'MuliRegular';
+    src: url('./assets/fonts/Muli.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'MuliLight';
+    src: url('./assets/fonts/Muli-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuliBold';
+    src: url('./assets/fonts/Muli-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
