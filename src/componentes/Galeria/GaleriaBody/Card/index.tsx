@@ -1,17 +1,18 @@
 import { ButtonEdit, ButtonTrash, CardBody, CardBottom, Column, Imagem, Slash, Text } from "./style"
 import "../../../../index.css"
-import { Nomes } from "../../../../assets/nomes"
+
+import React from "react"
 
 interface CardProps{
-    nome: Nomes   
+    nome:string  
 }
 
-const Card = ( {nome}: CardProps ) => {
+const Card: React.FC<CardProps> = ({nome})=> {
     return(
         <CardBody>
             <Imagem/>
             <Slash/>
-            <Text style={{fontFamily: 'MuliLight'}} >{nome.titulo}</Text>
+            <Text style={{fontFamily: 'MuliLight'}} >{nome}</Text>
             <CardBottom>
                 <ButtonTrash style={{fontFamily: 'MuliLight'}}>Excluir</ButtonTrash>
                 <Column/>

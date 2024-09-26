@@ -1,14 +1,15 @@
 import styled from "styled-components";
-import fundoBusca from '../../assets/images/fundo-busca.png'
+import fundoBusca from '../../assets/images/fundo-busca@2x.png'
 
 
 export const StyledBanner = styled.figure`
 margin-top: 0px;
 margin-left: 0px;
 height: 261px;
+width: 100%;
 background-image: url(${fundoBusca}) ;
-background-size: 100% 100%;
 background-repeat: no-repeat;
+background-position: center;
 opacity: 1;
 `
 export const StyledDiv = styled.div`

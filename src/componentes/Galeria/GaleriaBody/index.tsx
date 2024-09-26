@@ -1,20 +1,20 @@
 import Card from "./Card"
 import { StyledGaleriaBody } from "./style"
-import { NomeData } from "../../../assets/nomes"
+
+import {useListaDePersonagens} from "../../ListaPersonagens"
 
 
 
-const GaleriaBody = (  ) => {
-
-    
+const GaleriaBody =  () => {
+    const personagens = useListaDePersonagens();
+  
     return (
-        <StyledGaleriaBody>
-            {NomeData.map( nome =>(
-                <Card nome={nome} key={nome.id}/>
-            ))}
-          
-        </StyledGaleriaBody>
-    )
-}
-
-export default GaleriaBody
+      <StyledGaleriaBody>
+        {personagens.map((personagem, index) => (
+          <Card nome={personagem.name} key={index} />  
+        ))}
+      </StyledGaleriaBody>
+    );
+  };
+  
+  export default GaleriaBody;

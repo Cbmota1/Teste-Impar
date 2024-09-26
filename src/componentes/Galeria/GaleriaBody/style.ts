@@ -8,4 +8,5 @@ margin-left: 23%;
 flex-wrap: wrap;
 gap: 35px;
 margin-top: 35px;
+margin-bottom: 35px;
 `
