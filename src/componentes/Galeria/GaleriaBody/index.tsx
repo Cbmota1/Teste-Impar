@@ -1,39 +1,18 @@
-import { getData } from "../../API"
 import Card from "./Card"
 import { StyledGaleriaBody } from "./style"
-import { useEffect, useState } from "react"
+import { NomeData } from "../../../assets/nomes"
 
-const GaleriaBody = () => {
 
-    const [name, setName] = useState([]);
 
-    useEffect(() => {
-        getData().then((data) => {
-            setName(data)
-        });
+const GaleriaBody = (  ) => {
 
-    }, [])
     
     return (
         <StyledGaleriaBody>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            {NomeData.map( nome =>(
+                <Card nome={nome} key={nome.id}/>
+            ))}
+          
         </StyledGaleriaBody>
     )
 }

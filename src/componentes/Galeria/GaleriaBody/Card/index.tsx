@@ -1,12 +1,17 @@
 import { ButtonEdit, ButtonTrash, CardBody, CardBottom, Column, Imagem, Slash, Text } from "./style"
 import "../../../../index.css"
+import { Nomes } from "../../../../assets/nomes"
 
-const Card = () => {
+interface CardProps{
+    nome: Nomes   
+}
+
+const Card = ( {nome}: CardProps ) => {
     return(
         <CardBody>
             <Imagem/>
             <Slash/>
-            <Text style={{fontFamily : 'MuliLight'}}>Lorem ipsum dolor sit amet consectetur</Text>
+            <Text style={{fontFamily: 'MuliLight'}} >{nome.titulo}</Text>
             <CardBottom>
                 <ButtonTrash style={{fontFamily: 'MuliLight'}}>Excluir</ButtonTrash>
                 <Column/>
