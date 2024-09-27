@@ -26,6 +26,7 @@ bottom: 0;
 display: flex;
 flex-direction: row;
 `
+
 export const Imagem = styled.figure`
 background-image: url(${icone});
 background-repeat: no-repeat;
@@ -38,6 +39,7 @@ border-radius: 47px;
 margin-top: 10%;
 margin-left: 70px;
 `
+
 export const Slash = styled.div`
 border: 1px solid #F0EFF0;
 opacity: 1;
@@ -45,6 +47,7 @@ margin-top: 22px;
 width: 170px;
 margin-left: 32px;
 `
+
 export const Column = styled.div`
 width: 0px;
 height: 22px;
@@ -61,10 +64,10 @@ color: #263238;
 opacity: 1;
 font-size: 16px;
 width: 191px;
-height: 40px;
 margin-left: 21px;
 margin-top: 10px;
 `
+
 export const ButtonTrash = styled.button`
 background-image: url(${iconeTrash});
 background-repeat: no-repeat;
@@ -82,6 +85,7 @@ font-size: 15px;
     color: #DB2525;
 }
 `
+
 export const ButtonEdit = styled.button`
 background-image: url(${iconeEdit});
 background-repeat: no-repeat;

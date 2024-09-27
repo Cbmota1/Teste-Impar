@@ -5,18 +5,21 @@ import React from "react"
 
 interface CardProps{
     nome:string  
+    altura:string
 }
 
-const Card: React.FC<CardProps> = ({nome})=> {
+const Card: React.FC<CardProps> = ({nome , altura})=> {
     return(
         <CardBody>
             <Imagem/>
             <Slash/>
             <Text style={{fontFamily: 'MuliLight'}} >{nome}</Text>
+            <Text style={{fontFamily: 'MuliLight'}} >{altura} cm</Text>
+
             <CardBottom>
-                <ButtonTrash style={{fontFamily: 'MuliLight'}}>Excluir</ButtonTrash>
+                <ButtonTrash style={{fontFamily: 'MuliLight'}} onClick={() => alert('Função não implementada.')} >Excluir</ButtonTrash>
                 <Column/>
-                <ButtonEdit style={{fontFamily: 'MuliLight'}}> Editar </ButtonEdit>
+                <ButtonEdit style={{fontFamily: 'MuliLight'}} onClick={() => alert('Função não implementada.')}> Editar </ButtonEdit>
             </CardBottom>
         </CardBody>
     )

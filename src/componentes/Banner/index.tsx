@@ -1,5 +1,5 @@
 import { IconeLupa, StyledBanner, StyledDiv, StyledInput } from "./style"
-import lupa from '../../assets/images/lupa.png'
+import lupa from '../../assets/images/lupa@2x.png'
 import "../../index.css"
 
 const Banner = () => {

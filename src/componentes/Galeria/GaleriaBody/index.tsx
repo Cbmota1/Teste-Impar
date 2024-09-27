@@ -11,7 +11,7 @@ const GaleriaBody =  () => {
     return (
       <StyledGaleriaBody>
         {personagens.map((personagem, index) => (
-          <Card nome={personagem.name} key={index} />  
+          <Card nome={personagem.name} altura={personagem.height} key={index} />  
         ))}
       </StyledGaleriaBody>
     );
