@@ -1,16 +1,13 @@
-
-import GaleriaBody from "./GaleriaBody"
-import GaleriaHeader from "./GaleriaHeader"
-
-
+import GaleriaBody from './GaleriaBody';
+import GaleriaHeader from './GaleriaHeader';
 
 const Galeria = () => {
-    return(
+  return (
     <>
-    <GaleriaHeader />
-    <GaleriaBody />
+      <GaleriaHeader />
+      <GaleriaBody />
     </>
-    )
-}
+  );
+};
 
-export default Galeria
+export default Galeria;
